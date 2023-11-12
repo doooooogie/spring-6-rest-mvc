@@ -11,7 +11,6 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-import pl.doogie.spring6restmvc.NotFoundException;
 import pl.doogie.spring6restmvc.model.Beer;
 import pl.doogie.spring6restmvc.service.BeerService;
 import pl.doogie.spring6restmvc.service.BeerServiceImpl;
