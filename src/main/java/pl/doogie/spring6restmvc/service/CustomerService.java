@@ -1,6 +1,6 @@
 package pl.doogie.spring6restmvc.service;
 
-import pl.doogie.spring6restmvc.model.Customer;
+import pl.doogie.spring6restmvc.model.CustomerDTO;
 
 import java.util.List;
 import java.util.Optional;
@@ -8,14 +8,14 @@ import java.util.UUID;
 
 public interface CustomerService {
 
-    List<Customer> getCustomers();
-    Optional<Customer> getCustomerById(UUID id);
+    List<CustomerDTO> getAllCustomers();
+    Optional<CustomerDTO> getCustomerById(UUID id);
 
-    Customer saveNewCustomer(Customer customer);
+    CustomerDTO saveNewCustomer(CustomerDTO customer);
 
-    void updateCustomerById(UUID id, Customer customer);
+    Optional<CustomerDTO> updateCustomerById(UUID id, CustomerDTO customer);
 
-    void deleteCustomerById(UUID id);
+    Boolean deleteCustomerById(UUID id);
 
-    void patchById(UUID id, Customer customer);
+    Optional<CustomerDTO> patchById(UUID id, CustomerDTO customer);
 }

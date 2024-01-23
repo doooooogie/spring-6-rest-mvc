@@ -1,4 +1,4 @@
-package pl.doogie.spring6restmvc;
+package pl.doogie.spring6restmvc.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
